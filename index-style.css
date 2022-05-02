@@ -1,0 +1,62 @@
+@font-face {
+    font-family: "HKGrotesk";
+    src: url(HKGrotesk-Regular.woff);
+  }
+
+* {
+    list-style-type: none;
+    font-family: 'HKGrotesk';
+}
+
+html {
+    font-size: 24;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+nav {
+    padding: 20% 20%;
+}
+
+li {
+    width: auto;
+    height: auto;
+    line-height: 1.5rem;
+}
+
+li h1 {
+    color: red;
+    height: 2rem;
+    letter-spacing: 0.15rem;
+}
+
+li h1:hover {
+    animation-duration: 2s;
+    animation-name: title-colors;
+    animation-iteration-count: infinite;
+}
+
+@keyframes title-colors {
+    0% {
+      color: red;
+    }
+  
+    25% {
+      color: greenyellow;
+    }
+
+    50% {
+        color: red;
+    }
+
+    75% {
+      color: greenyellow;
+    }
+  }
+
+  small {
+      font-size: 0.5rem;
+  }
