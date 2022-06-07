@@ -1,6 +1,8 @@
 @font-face {
     font-family: "HKGrotesk";
     src: url(HKGrotesk-Regular.woff);
+    font-weight: normal;
+    font-style: normal;
   }
 
 * {
@@ -9,7 +11,30 @@
 }
 
 html {
-    font-size: 24;
+    font-size: 24px;
+    margin: 25px;
+}
+
+body {
+    width: auto;
+    margin-top: 100px;
+}
+
+/* NavBar Menu */
+
+.sidebar-container {
+    position: fixed;
+    top: 0;
+    width: 94%;
+    margin-top: 0;
+    padding: 0 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    z-index: 9999;
+    font-size: 1.2rem;
 }
 
 a {
@@ -17,27 +42,24 @@ a {
     text-decoration: none;
 }
 
+a:hover {
+    text-decoration: underline;
+}
+
+a:active {
+    font-weight: bold;
+}
+
 .menu-item:hover {
-    font-size: 1.03rem;
+    text-decoration: underline;
 }
 
-nav {
-    padding: 5%;
-}
-
-li {
-    width: auto;
-    height: auto;
-    line-height: 1.5rem;
-}
-
-li h1 {
+.menu-title {
     color: red;
-    height: 2rem;
     letter-spacing: 0.15rem;
 }
 
-li h1:hover {
+.menu-title:hover {
     animation-duration: 2s;
     animation-name: title-colors;
     animation-iteration-count: infinite;
@@ -59,9 +81,47 @@ li h1:hover {
     75% {
       color: greenyellow;
     }
-  }
+}
 
-  small {
-      font-size: 0.5rem;
-      color: red;
-  }
+/* body text */
+
+.about-me {
+    width: 90%;
+    font-size: 1rem;
+}
+
+.text-container {
+    padding: 10 0;
+    text-align: center;
+}
+
+.text-title {
+    font-size: 1rem;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+/* body list */
+
+.body-list {
+    padding: 50 0;
+    font-size: 28px;
+}
+
+small {
+    font-size: 0.6rem;
+    color: red;
+}
+
+/* footer */
+
+footer {
+    width: fit-content;
+    position: absolute;
+    bottom: 50;
+    background-color: red;
+}
+
+footer a {
+    color: white;
+}
