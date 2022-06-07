@@ -17,8 +17,12 @@ a {
     text-decoration: none;
 }
 
+.menu-item:hover {
+    font-size: 1.03rem;
+}
+
 nav {
-    padding: 20% 20%;
+    padding: 20% 10%;
 }
 
 li {
