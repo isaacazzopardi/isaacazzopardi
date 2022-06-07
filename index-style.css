@@ -32,13 +32,13 @@ body {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    background-color: white;
+    background-color:  rgba(255, 255, 255, 1);
     z-index: 9999;
     font-size: 1.2rem;
 }
 
 a {
-    color: black;
+    color:  rgba(0, 0, 0, 1);
     text-decoration: none;
 }
 
@@ -55,7 +55,7 @@ a:active {
 }
 
 .menu-title {
-    color: red;
+    color:  rgba(255, 0, 0, 1);
     letter-spacing: 0.15rem;
 }
 
@@ -67,7 +67,7 @@ a:active {
 
 @keyframes title-colors {
     0% {
-      color: red;
+      color:  rgba(255, 0, 0, 1);
     }
   
     25% {
@@ -75,7 +75,7 @@ a:active {
     }
 
     50% {
-        color: red;
+        color:  rgba(255, 0, 0, 1);
     }
 
     75% {
@@ -110,7 +110,7 @@ a:active {
 
 small {
     font-size: 0.6rem;
-    color: red;
+    color:  rgba(255, 0, 0, 1);
 }
 
 /* footer */
@@ -119,9 +119,9 @@ footer {
     width: fit-content;
     position: absolute;
     bottom: 50;
-    background-color: red;
+    background-color:  rgba(255, 0, 0, 1);
 }
 
 footer a {
-    color: white;
+    color: rgba(255, 255, 255, 1);
 }
