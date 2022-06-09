@@ -156,6 +156,7 @@ footer {
     position: sticky;
     bottom: 50;
     background-color: red;
+    z-index: 99;
 }
 
 footer a {
