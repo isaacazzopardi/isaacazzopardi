@@ -71,7 +71,7 @@ a:active {
     }
   
     25% {
-      color: greenyellow;
+      color:  rgba(173, 255, 47, 1);
     }
 
     50% {
@@ -79,7 +79,7 @@ a:active {
     }
 
     75% {
-      color: greenyellow;
+      color:  rgba(173, 255, 47, 1);
     }
 }
 
@@ -124,4 +124,80 @@ footer {
 
 footer a {
     color: rgba(255, 255, 255, 1);
+    transition: 0.5s;
 }
+
+#footer-animate:active {
+    animation-duration: 1.5s;
+    animation-name: footer-animate;
+}
+
+@keyframes footer-animate {
+    20% {
+        transform: rotate(1turn);
+        background-color: greenyellow;
+    }
+
+    100% {
+        transform: rotate(1turn);
+    }
+}
+
+/* contact form */
+
+.contant-form {
+    padding: 0px;
+}
+
+form {
+    border: 5px solid black;
+    border-radius: 5px;
+    padding: 50px 50px;
+}
+
+#name {
+    background-color: white;
+    padding: 20px;
+    font-size: 1rem;
+    margin: 20 0;
+}
+
+#email {
+    background-color: white;
+    padding: 20px;
+    font-size: 1rem;
+    margin: 20 0;
+}
+
+#note {
+    height: 180px;
+    width: 100%;
+    background-color: white;
+    padding: 20px;
+    font-size: 1rem;
+    margin: 20 0;
+}
+
+#submit {
+    background-color: white;
+    padding: 0px;
+    font-size: 1rem;
+    transition: 0.2s;
+}
+
+#submit:hover {
+    background-color: rgba(173, 255, 47, 1);
+}
+
+#submit:active {
+    background-color: rgba(90, 210, 0, 1);
+    font-weight: bold;
+}
+
+input, textarea {
+    width: 450px;
+    height: 60px;
+    border: 5px solid black;
+    border-radius: 5px;
+}
+
