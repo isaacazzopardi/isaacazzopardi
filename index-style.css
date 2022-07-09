@@ -14,7 +14,7 @@
 
 * {
     list-style-type: none;
-    font-family: 'HKGrotesk';
+    font-family: "HKGrotesk";
 }
 
 html {
@@ -54,6 +54,7 @@ hr {
     background-color:  white;
     z-index: 9999;
     font-size: 2rem;
+    font-family: "HK Grotesk";
     letter-spacing: 0.15rem;
 }
 
