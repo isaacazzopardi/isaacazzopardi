@@ -1,20 +1,26 @@
 @font-face {
     font-family: "HKGrotesk";
-    src: url(HKGrotesk-Regular.woff);
+    src: url(font/HKGrotesk-Regular.woff);
     font-weight: normal;
     font-style: normal;
   }
+
 @font-face {
     font-family: "HKGrotesk";
-    src: url(HKGrotesk-Bold.woff);
+    src: url(font/HKGrotesk-Bold.woff);
     font-weight: bold;
     font-style: bold;
   }
 
+@font-face {
+    font-family: "Gotham Narrow";
+    src: url(font/Gotham\ Narrow-Book.otf);
+    font-weight: normal;
+    font-style: normal;
+  }
 
 * {
     list-style-type: none;
-    font-family: "HKGrotesk";
 }
 
 html {
@@ -30,12 +36,23 @@ body {
 
 p {
     width: 50%;
-    margin: 100px 0px 100px 50px;
+    font-family: "gotham narrow";
+    font-size: 1rem;
+}
+
+#PS {
+    width: 85%;
+}
+
+small {
+    font-size: 0.75rem;
+    color:  rgba(38, 38, 38, 1);
 }
 
 hr {
     margin: 0 10%;
 }
+
 
 /* NavBar Menu */
 
@@ -54,8 +71,8 @@ hr {
     background-color:  white;
     z-index: 9999;
     font-size: 2rem;
-    font-family: "HK Grotesk";
     letter-spacing: 0.15rem;
+    font-family: "HKGrotesk";
 }
 
 a {
@@ -121,7 +138,7 @@ a:active {
 
 .navbar-active-title {
     color: white;
-    text-align: center;
+    text-align: right;
     animation-duration: 3s;
     animation-name: title-colors;
     animation-iteration-count: infinite;    
@@ -157,6 +174,7 @@ a:active {
     font-size: 2rem;
     text-align: center;
     line-height: 4rem;
+    font-family: "HKGrotesk", "Gotham Narrow";
 }
 
 .menu-item:hover {
@@ -174,17 +192,15 @@ a:active {
 }
 
 
-small {
-    font-size: 0.6rem;
-    color:  rgba(255, 0, 0, 1);
-}
+
 
 
 /* project page */
 
 .project-head {
-    margin: 120px 10% 0 10%;
+    margin: 150px 10% 0 10%;
     width: fit-content;
+    font-family: "HKGrotesk";
 }
 
 .project-title {
@@ -197,6 +213,7 @@ small {
 .project-sub {
     display: flex;
     justify-content: flex-start;
+    align-items: baseline;
     width: auto;
     color: red;
     font-size: 1.5rem;
@@ -213,15 +230,16 @@ small {
 
 .project-text {
     display: grid;
-    grid-template-columns: repeat(4, 23%);
+    grid-template-columns: repeat(3, 30%);
     grid-template-rows: repeat(3, auto);
     grid-auto-flow: column;
     column-gap: 25px;
     row-gap: 25px;
     font-size: 1rem;
     text-align: left;
-    margin: 25px 10% 20px 10%;
+    margin: 25px 10% 50px 10%;
     color: rgba(38, 38, 38, 1);
+    font-family: "Gotham Narrow";
 }
 
 .project-text div {
@@ -256,13 +274,14 @@ small {
 
 .gallery-container {
     display: grid;
-    grid-template-columns: 25% 75%;
-    grid-template-rows: repeat(10, auto);
-    width: 1150px;
-    column-gap: 65px;
+    grid-template-columns: repeat(4,25%);
+    grid-template-rows: repeat(2, auto);
+    width: 100%;
+    row-gap: 10vh;
+    column-gap: 2vw;
     justify-content: left;
     background-color: rgba(255, 255, 255, 1);
-    margin: 50px 10% 0 10%;
+    margin: 100px 10% 0 10%;
     font-size: 1rem;
     overflow: visible;
     object-fit: contain;
@@ -272,18 +291,24 @@ small {
     width: 100%;
     height: auto;
     padding: 0 0;
-    grid-column-start: 1;
+    grid-row-start: 2;
+    font-family: "Gotham Narrow";
 }
 
 .gallery {
     display: flex;
     flex-flow: column wrap;
     align-items: center;
+    align-content: center;
+    justify-content: center;
+    justify-items: center;
     gap: 25px;
-    width: 92%;
+    width: 100%;
     height: auto;
     padding: 0 0;
-    grid-column-start: 2;
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 1;
 }
 
 .gallery-image {
@@ -291,8 +316,6 @@ small {
     height: auto;
     object-fit: contain;
 }
-
-
 
 /* thumbnail index */
 
@@ -306,6 +329,11 @@ small {
     justify-content: center;
     overflow: hidden;
     margin: 0 50px;
+    font-family: "HKGrotesk";
+}
+
+.thumb-index a {
+    text-decoration: none;
 }
 
 .thumb-index ul {
@@ -336,7 +364,9 @@ figure {
     height: 100%;
     object-fit: cover;
     border-radius: 3px;
+    object-fit: contain;
 }
+
 
 .thumb-text {
     display: flex;
@@ -344,11 +374,11 @@ figure {
     align-items: center;
     width: 400px;
     height: 280px;
-    color: white;
-    font-size: 1.5rem;
+    color: red;
+    font-size: 2rem;
     position: relative;
     top: -280px;
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(255, 255, 255, 0.9);
     opacity: 0%;
     transition: 0.5s;
     z-index: 1;
@@ -370,6 +400,7 @@ footer {
     margin-left: 50px;
     color: white;
     z-index: 9999;
+    font-family: "HKGrotesk";
 }
 
 footer a {
