@@ -98,7 +98,7 @@ a:active {
 
 .navbar-contact:hover {
     animation: navbar-contact;
-    animation-duration: 1s;
+    animation-duration: 3s;
     animation-iteration-count: infinite;
 }
 
