@@ -116,6 +116,20 @@ a:active {
     100% { transform: skewX(-15deg); }  
   }
 
+.navbar-active-title {
+    color: white;
+    text-align: right;
+    animation-duration: 3s;
+    animation-name: title-colors;
+    animation-iteration-count: infinite;    
+}
+
+.navbar-active-title:hover {
+    color: greenyellow;
+    animation: navbar-contact 1s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
 
 @keyframes title-colors {
     0% {
@@ -134,14 +148,6 @@ a:active {
       color: greenyellow;
     }
     
-}
-
-.navbar-active-title {
-    color: white;
-    text-align: right;
-    animation-duration: 3s;
-    animation-name: title-colors;
-    animation-iteration-count: infinite;    
 }
 
 
