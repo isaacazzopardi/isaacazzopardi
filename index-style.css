@@ -155,13 +155,31 @@ a:active {
 /* body text */
 
 .about-me {
-    width: 90%;
-    font-size: 1rem;
+    display: flex;
+    flex: row wrap;
+    justify-content: flex-start;
+    justify-items: flex-start;
+    align-content: flex-start;
+    align-items: flex-start;
+    gap: 5%;
+    width: 65%;
+    padding: 5vh 10% 5vh 10%;
+    object-fit: contain;
 }
 
-.text-container {
-    padding: 50 0;
-    text-align: center;
+.about-text {
+    width: 20vw;
+    font-family: 'Gotham Narrow';
+    font-size: 1.5rem;
+    flex-grow: 2;
+    line-height: 2.2rem;
+}
+
+.about-image {
+    width: 10vw;
+    height: auto;
+    object-fit: contain;
+    flex-grow: 1;
 }
 
 .text-title {
