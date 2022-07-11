@@ -227,7 +227,6 @@ a:active {
 
 .project-tools {
     width: auto;
-    color: rgba(173, 255, 47, 1);
     color: rgba(38, 38, 38, 1);
     font-size: 1.5rem;
     text-decoration: none;
@@ -243,7 +242,7 @@ a:active {
     row-gap: 25px;
     font-size: 1rem;
     text-align: left;
-    margin: 25px 10% 50px 10%;
+    margin: 25px 10% 25px 10%;
     color: rgba(38, 38, 38, 1);
     font-family: "Gotham Narrow";
 }
@@ -257,6 +256,11 @@ a:active {
     grid-column-end:1;
     grid-row-start: 1;
     grid-row-end: 1;
+}
+
+#text-brief-2 {
+    grid-column-start: 2;
+    grid-row-start: 1;
 }
 
 #text-challenges-1 {
@@ -287,7 +291,7 @@ a:active {
     column-gap: 2vw;
     justify-content: left;
     background-color: rgba(255, 255, 255, 1);
-    margin: 100px 10% 0 10%;
+    margin: 50px 10% 0 10%;
     font-size: 1rem;
     overflow: visible;
     object-fit: contain;
@@ -322,6 +326,7 @@ a:active {
     height: auto;
     object-fit: contain;
 }
+
 
 /* thumbnail index */
 
