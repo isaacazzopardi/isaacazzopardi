@@ -31,6 +31,7 @@ body {
     width: 100%;
     margin: 0;
     margin-top: 100px;
+    margin-bottomL 100px;
     height: auto;
 }
 
@@ -423,7 +424,7 @@ figure {
 footer {
     width: auto;
     position: fixed;
-    bottom: 50;
+    bottom: 3vh;
     background-color: rgba(255, 0, 0, 1);
     margin: 0%;
     margin-left: 50px;
