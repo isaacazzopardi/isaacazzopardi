@@ -1,20 +1,20 @@
 @font-face {
     font-family: "HKGrotesk";
-    src: url(font/HKGrotesk-Regular.woff);
+    src: url(/HKGrotesk-Regular.woff);
     font-weight: normal;
     font-style: normal;
   }
 
 @font-face {
     font-family: "HKGrotesk";
-    src: url(font/HKGrotesk-Bold.woff);
+    src: url(/HKGrotesk-Bold.woff);
     font-weight: bold;
     font-style: bold;
   }
 
   @font-face {
     font-family: "Gotham Narrow";
-    src: url(font/GothamNarrow-Book.otf);
+    src: url(/GothamNarrow-Book.otf);
     font-weight: normal;
     font-style: normal;
   }
