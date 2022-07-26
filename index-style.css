@@ -466,6 +466,14 @@ a:active {
     object-fit: contain;
 }
 
+@media only screen and (max-width: 600px) {
+    .gallery-image {
+        width: 100vw;
+        height: auto;
+        object-fit: contain;
+    }
+  }
+
 /* thumbnail index */
 
 .thumb-index {
