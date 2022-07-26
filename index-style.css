@@ -242,23 +242,45 @@ a:active {
     background-color: white;
 }
 
+@media only screen and (max-width: 600px) {
+    .writing-menu {
+    display: none;
+    }
+  }
+
 .writing-menu-item {
     width: fit-content;
     font-family: "HKGrotesk";
     font-size: 1.5rem;
-    padding: 0 5vh;
+    padding: 0 2vw;
 }
+
+@media only screen and (max-width: 600px) {
+    .writing-menu-item {
+    display: none;
+    }
+  }
 
 .section-header {
     color: rgba(38, 38, 38, 1);
     width: 90%;
     height: 10vw;
     margin: 0 50px;
-    padding: 15vh 0 0 0;
+    padding: 15vh 0 1vh 0;
     font-family: "HKGrotesk";
     font-size: 6rem;
     font-weight: bolder;
 }
+
+@media only screen and (max-width: 600px) {
+    .section-header {
+    font-size: 4rem;
+    padding: 3vh 0 5vh 0;
+    margin: 0 3vh;
+    text-align: center;
+    border-top: 2px solid red;
+    }
+  }
 
 .article {
     display: flex;
@@ -267,14 +289,34 @@ a:active {
     margin: 0 auto;
 }
 
+@media only screen and (max-width: 600px) {
+    .article {
+    width: 100%;
+    flex-flow: column wrap;
+    margin: 0 1vh;
+    padding: 0 0 0 0;
+    }
+  }
+
 .article-title {
-    width: 20%;
-    padding: 0 25px;
+    width: 30%;
     font-family: "Gotham Narrow";
+    font-size: 2vh;
     text-align: right;
     color: rgba(38, 38, 38, 1);
     border-right: 0.5px solid red;
 }
+
+@media only screen and (max-width: 600px) {
+    .article-title {
+    width: 90%;
+    margin: 0vh 2vh;
+    padding: 3vh 0;
+    flex-flow: column wrap;
+    text-align: left;
+    border-right: none;
+    }
+  }
 
 .article-body {
     width: 70%;
@@ -287,6 +329,14 @@ a:active {
     object-fit: contain;
 }
 
+@media only screen and (max-width: 600px) {
+    .article-body {
+    width: 90%;
+    margin: 0vh 2vh;
+    padding: 0;
+    }
+  }
+
 .article-body img {
     width: 400px;
     height: auto;
@@ -296,6 +346,7 @@ a:active {
     padding: 0%;
     margin: 0%;
 }
+
 
 /* project page */
 
