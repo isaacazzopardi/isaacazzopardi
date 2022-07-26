@@ -343,6 +343,12 @@ a:active {
     height: auto;
 }
 
+@media only screen and (max-width: 600px) {
+    .article-body img {
+    width: 100%;
+    }
+  }
+
 .article h2, h4, p {
     padding: 0%;
     margin: 0%;
