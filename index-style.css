@@ -29,10 +29,10 @@ html {
 
 body {
     width: 100vw;
-    height: 100vh;
+    height: auto;
     margin: 0;
-    margin-top: 100px;
-    margin-bottom: 100px;
+    margin-top: 10%;
+    margin-bottom: 0;
     height: auto;
 }
 
@@ -205,11 +205,15 @@ a:active {
 
 .home-menu {
     width: 100%;
+    height: auto;
     padding: 15vh 0;
     font-size: 8vh;
     text-align: center;
-    line-height: 20vh;
     font-family: "HKGrotesk", "Gotham Narrow";
+}
+
+.home-menu li {
+    padding: 5vh 0;
 }
 
 .menu-item:hover {
