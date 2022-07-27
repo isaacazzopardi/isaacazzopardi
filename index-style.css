@@ -99,7 +99,7 @@ a {
 }
 
 a:hover {
-    text-decoration: underline;
+    text-decoration: none;
 }
 
 a:active {
@@ -206,9 +206,9 @@ a:active {
 .home-menu {
     width: 100%;
     padding: 15vh 0;
-    font-size: 2rem;
+    font-size: 8vh;
     text-align: center;
-    line-height: 4rem;
+    line-height: 20vh;
     font-family: "HKGrotesk", "Gotham Narrow";
 }
 
@@ -582,24 +582,24 @@ figure {
     }
   }
 
+
 /* footer */
 
 footer {
-    width: auto;
+    width: 100%;
     position: fixed;
-    bottom: 3vh;
-    background-color: rgba(255, 0, 0, 1);
-    margin: 0%;
-    margin-left: 50px;
-    color: white;
+    bottom: 0;
+    margin: 1vh 0;
+    font-size: 2vh;
+    text-align: center;
+    color: red;
     z-index: 9999;
     font-family: "HKGrotesk";
-    font-size: 1.5rem;
 }
 
 @media only screen and (max-width: 600px) {
     footer {
-        display: none;
+        position: fixed;
     }
   }
 
