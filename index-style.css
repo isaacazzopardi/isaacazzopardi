@@ -506,7 +506,7 @@ a:active {
         justify-items: center;
         align-items: center;
         width: 99%;
-        margin: 0;
+        margin: 10vh 0 0 0;
         padding: 0 0;
         gap: 25px;
     }
