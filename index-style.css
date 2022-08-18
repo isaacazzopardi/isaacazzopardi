@@ -388,7 +388,7 @@ a:active {
     align-items: baseline;
     width: auto;
     color: red;
-    font-size: 2rem;
+    font-size: 1.5rem;
 }
 
 @media only screen and (max-width: 600px) {
