@@ -65,7 +65,7 @@ hr {
     width: 100%;
     height: 10%;
     margin: 0;
-    padding: 0 50;
+    padding: 0 50px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -78,6 +78,21 @@ hr {
     box-sizing: border-box;
 }
 
+.navbar-title {
+    color:  rgba(255, 0, 0, 1);
+}
+
+.navbar-contact {
+    width: 25%;
+    display: flex;
+    justify-content: space-between;
+    font-size: 2rem;
+}
+
+.navbar-contact a {
+    padding: 0 10px;
+}
+
 @media only screen and (max-width: 600px) {
     .navbar {
         display: flex;
@@ -85,11 +100,16 @@ hr {
         flex-direction: column;
         text-align: center;
         width: 100%;
+        height: 12%;
         margin: 0;
-        font-size: 2.2rem;
+        padding: 0;
     }
     .navbar-contact, .navbar-active-title {
-        display: none;
+        position: relative;
+        justify-content: space-around;
+        width: 50%;
+        margin-top: 1%;
+        font-size: 1.2rem;
     }
   }
 
@@ -106,9 +126,6 @@ a:active {
     color: greenyellow;
 }
 
-.navbar-title {
-    color:  rgba(255, 0, 0, 1);
-}
 
 .navbar-title:active {
     color:  greenyellow;
@@ -237,12 +254,14 @@ a:active {
     position: fixed;
     display: inline-flex;
     flex-flow: row wrap;
-    justify-content: center;
-    width: 90%;
+    justify-content: space-between;
+    width: 35vw;
     height: auto;
     top: 10%;
-    margin: 0 50px;
-    padding: 0;
+    right: 0;
+    margin: 0;
+    padding: 0 60px;
+    z-index: 9999;
     background-color: white;
 }
 
@@ -256,7 +275,7 @@ a:active {
     width: fit-content;
     font-family: "HKGrotesk";
     font-size: 1.5rem;
-    padding: 0 2vw;
+    padding: 0 0 0 10px;
 }
 
 @media only screen and (max-width: 600px) {
@@ -270,7 +289,7 @@ a:active {
     width: 90%;
     height: 10vw;
     margin: 0 50px;
-    padding: 15vh 0 1vh 0;
+    padding: 5vh 0 2vh 0;
     font-family: "HKGrotesk";
     font-size: 6rem;
     font-weight: bolder;
@@ -279,7 +298,7 @@ a:active {
 @media only screen and (max-width: 600px) {
     .section-header {
     font-size: 4rem;
-    padding: 3vh 0 5vh 0;
+    padding: 10vh 0 5vh 0;
     margin: 0 3vh;
     text-align: center;
     border-top: 2px solid red;
@@ -318,7 +337,7 @@ a:active {
     margin: 0vh 2vh;
     padding: 3vh 0;
     flex-flow: column wrap;
-    text-align: left;
+    text-align: center;
     border-right: none;
     }
   }
@@ -362,16 +381,17 @@ a:active {
 /* project page */
 
 .project-head {
-    margin: 25vh 10% 0 10%;
+    margin: 15vh 10% 0 10%;
     width: fit-content;
     font-family: "HKGrotesk";
+    
 }
 
 .project-title {
     color: rgba(38, 38, 38, 1);
     font-size: 4rem;
     font-weight: bolder;
-    line-height: 80%;
+    line-height: 100%;
 }
 
 @media only screen and (max-width: 600px) {
@@ -383,8 +403,8 @@ a:active {
 
 .project-sub {
     display: flex;
-    flex-flow: column wrap;
-    justify-content: flex-start;
+    flex-flow: row wrap;
+    justify-content: space-between;
     align-items: baseline;
     width: auto;
     color: red;
@@ -478,21 +498,18 @@ a:active {
     }
   }
 
-/* thumbnail index */
+/* ——————— thumbnail index ——————— */
 
 .thumb-index {
-    position: relative;
-    width: 91%;
-    padding: 0 0;
+    position: absolute;
+    width: fit-content;
+    padding: 10vh 0 15vh 0;
     display: flex;
     flex-flow: row wrap;
-    gap: 50px 50px;
+    gap: 25px 25px;
     justify-content: center;
-    align-content: center;
-    justify-items: center;
-    align-items: center;
     overflow: hidden;
-    margin: 10vw 50px;
+    margin: 0 50px;
     font-family: "HKGrotesk";
 }
 
@@ -506,8 +523,8 @@ a:active {
         justify-items: center;
         align-items: center;
         width: 99%;
-        margin: 10vh 0 0 0;
-        padding: 0 0;
+        margin: 25% 0 0 0;
+        padding: 0 0 10vh 0;
         gap: 25px;
     }
   }
@@ -519,19 +536,14 @@ a:active {
 
 .thumb-index ul {
     width: 100%;
-    margin: 0;
+    margin: 0%;
     padding: 0;
 }
 
 .thumb-item {
-    width: 300px;
-    height: 210px;
-    border-radius: 3px;
+    width: 540px;
+    height: 369px;
     border: 1px solid black;
-}
-
-.thumb-item:hover {
-    color: white;
 }
 
 figure {
@@ -551,12 +563,12 @@ figure {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 300px;
-    height: 210px;
+    width: 540px;
+    height: 369px;
     color: red;
     font-size: 2rem;
     position: relative;
-    top: -210px;
+    top: -369px;
     background-color: rgba(255, 255, 255, 0.9);
     opacity: 0%;
     transition: 0.5s;
@@ -568,17 +580,23 @@ figure {
 }
 
 @media only screen and (max-width: 600px) {
+    .thumb-item {
+        width: 270px;
+        height: 189px;
+        border: 1px solid black;
+        margin: 0;
+    }
     .thumb-text {
         display: flex;
         justify-content: center;
         align-items: center;
         text-align: center;
-        width: 300px;
-        height: 210px;
+        width: 270px;
+        height: 189px;
         color: red;
         font-size: 2.5rem;
         position: relative;
-        top: -210px;
+        top: -189px;
         background-color: rgba(255, 255, 255, 0.9);
         opacity: 0%;
         transition: 0.5s;
@@ -694,4 +712,5 @@ input, textarea {
     border: 5px solid black;
     border-radius: 5px;
 }
+
 
