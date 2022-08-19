@@ -93,6 +93,12 @@ hr {
     padding: 0 10px;
 }
 
+#navbar-contact:hover {
+    animation: navbar-contact;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+}
+
 @media only screen and (max-width: 600px) {
     .navbar {
         display: flex;
