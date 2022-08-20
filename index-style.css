@@ -92,7 +92,7 @@ small {
         margin: 0;
         padding: 0;
     }
-    .navbar-contact, .navbar-active-title {
+    #navbar-contact, .navbar-active-title {
         position: relative;
         justify-content: space-around;
         width: 50%;
