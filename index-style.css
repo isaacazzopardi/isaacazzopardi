@@ -92,7 +92,7 @@ small {
         margin: 0;
         padding: 0;
     }
-    #navbar-contact, .navbar-active-title {
+    .navbar-contact, .navbar-active-title {
         position: relative;
         justify-content: space-around;
         width: 50%;
@@ -369,9 +369,8 @@ a:active {
 /* project page */
 
 .project-head {
-    width: 80%;
+    width: 42%;
     margin: 10vh 10% 0 10%;
-    width: fit-content;
     font-family: "HKGrotesk";
 }
 
@@ -418,7 +417,8 @@ a:active {
     display: block;
     width: 80%;
     height: auto;
-    column-count: 3;
+    column-count: 1;
+    column-gap: 50px;
     margin: 2% 10%;
     font-family: "Gotham Narrow";
     font-size: 1rem;
@@ -505,7 +505,7 @@ a:active {
         justify-items: center;
         align-items: center;
         width: 99%;
-        margin: 25% 0 0 0;
+        margin: 10% 0 0 0;
         padding: 0 0 10vh 0;
         gap: 25px;
     }
@@ -523,8 +523,8 @@ a:active {
 }
 
 .thumb-item {
-    width: 540px;
-    height: 369px;
+    width: 270px;
+    height: 184.5px;
     border: 1px solid black;
 }
 
@@ -545,12 +545,12 @@ figure {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 540px;
-    height: 369px;
+    width: 270px;
+    height: 184.5px;
     color: red;
     font-size: 2rem;
     position: relative;
-    top: -369px;
+    top: -184.5px;
     background-color: rgba(255, 255, 255, 0.9);
     opacity: 0%;
     transition: 0.5s;
@@ -691,6 +691,28 @@ figure {
 
   }
 
+/* ——————— footer navbar ——————— */
+
+.footer-nav {
+    width: 99%;
+    height: 60px;
+    margin: 0 0;
+    padding: 0 0;
+    background-color: white;
+}
+
+.footer-navlist {
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    margin: 0;
+    padding: 0 50px;
+    font-family: 'HKGrotesk';
+    font-size: 1.2rem;
+}
+
 /* ——————— footer ——————— */
 
 footer {
@@ -798,4 +820,5 @@ input, textarea {
     border: 5px solid black;
     border-radius: 5px;
 }
+
 
