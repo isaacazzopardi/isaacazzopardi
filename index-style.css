@@ -28,12 +28,8 @@ html {
 }
 
 body {
-    width: 100vw;
-    height: auto;
-    margin: 0;
-    margin-top: 10%;
-    margin-bottom: 0;
-    height: auto;
+    margin: 8% 0 0 0;
+    border: solid white;
 }
 
 p {
@@ -42,17 +38,9 @@ p {
     font-size: 1rem;
 }
 
-#PS {
-    width: 85%;
-}
-
 small {
     font-size: 0.75rem;
     color:  rgba(38, 38, 38, 1);
-}
-
-hr {
-    margin: 0 10%;
 }
 
 
@@ -93,12 +81,6 @@ hr {
     padding: 0 20px;
 }
 
-#navbar-contact:hover {
-    animation: navbar-contact;
-    animation-duration: 1s;
-    animation-iteration-count: infinite;
-}
-
 @media only screen and (max-width: 600px) {
     .navbar {
         display: flex;
@@ -137,7 +119,7 @@ a:active {
     color:  greenyellow;
 }
 
-.navbar-contact:hover {
+#navbar-contact:hover {
     animation: navbar-contact;
     animation-duration: 1s;
     animation-iteration-count: infinite;
@@ -387,22 +369,22 @@ a:active {
 /* project page */
 
 .project-head {
-    margin: 15vh 10% 0 10%;
+    width: 80%;
+    margin: 10vh 10% 0 10%;
     width: fit-content;
     font-family: "HKGrotesk";
-    
 }
 
 .project-title {
     color: rgba(38, 38, 38, 1);
-    font-size: 4rem;
+    font-size: 3rem;
     font-weight: bolder;
     line-height: 100%;
 }
 
 @media only screen and (max-width: 600px) {
     .project-title {
-        font-size: 3rem;
+        font-size: 2rem;
         line-height: 90%;
     }
   }
@@ -422,7 +404,7 @@ a:active {
         flex-direction: column;
         padding: 0;
         margin: 0;
-        font-size: 1.2rem;
+        font-size: 1rem;
     }
   }
 
@@ -434,10 +416,16 @@ a:active {
 
 .project-text {
     display: block;
-    width: 60vw;
+    width: 80%;
+    height: auto;
+    column-count: 3;
     margin: 2% 10%;
     font-family: "Gotham Narrow";
     font-size: 1rem;
+}
+
+.text-brief {
+    column-span: initial;
 }
 
 @media only screen and (max-width: 600px) {
@@ -445,32 +433,23 @@ a:active {
         display: block;
         width: 80vw;
         margin: 5% 10%;
-        font-size: 1rem;
+        font-size: 0.8rem;
     }
   }
 
 /* gallery images */
 
 .gallery-container {
-    display: grid;
-    grid-template-columns: repeat(4,25%);
-    grid-template-rows: repeat(2, auto);
-    width: 100%;
-    row-gap: 10vh;
-    column-gap: 2vw;
-    justify-content: left;
-    background-color: rgba(255, 255, 255, 1);
-    margin: 50px 10% 0 10%;
+    display: block;
+    width: 80%;
+    margin: 50px 10%;
     font-size: 1rem;
-    overflow: visible;
     object-fit: contain;
 }
 
 .gallery-text {
     width: 100%;
     height: auto;
-    padding: 0 0;
-    grid-row-start: 2;
     font-family: "Gotham Narrow";
 }
 
@@ -482,9 +461,7 @@ a:active {
     justify-content: center;
     justify-items: center;
     gap: 25px;
-    width: 100%;
     height: auto;
-    padding: 0 0;
     grid-column-start: 1;
     grid-column-end: 4;
     grid-row-start: 1;
@@ -492,7 +469,6 @@ a:active {
 
 .gallery-image {
     width: 100%;
-    height: auto;
     object-fit: contain;
 }
 
@@ -611,7 +587,111 @@ figure {
   }
 
 
-/* footer */
+/* ——————— footer thumbnail index ——————— */
+
+.thumb-index-footer-container {
+    background-color: rgba(38, 38, 38, 1);
+    height: 400px;
+    padding: 5% 0 0 0;
+    text-align: center;
+}
+
+.thumb-index-footer-title {
+    margin: 0% 10%;
+    font-size: min(max(2rem, 20px), 15px);
+    font-family: "HKGrotesk";
+    color: white;
+}
+
+.thumb-index-footer {
+    display: flex;
+    flex-flow: row wrap;
+    gap: 1.33%;
+    width: 80%;
+    margin: 3% 10%;
+    padding: 0;
+    justify-content: flex-start;
+    font-family: "HKGrotesk";
+}
+
+.thumb-index-footer a {
+    text-decoration: none;
+}
+
+.thumb-index-footer ul {
+    width: 100%;
+    margin: 0%;
+    padding: 0;
+}
+
+.thumb-item-footer {
+    width: 32%;
+    aspect-ratio: 3/2;
+    border: 1px solid black;
+    background-color: white;
+}
+
+figure {
+    margin: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.thumb-item-footer img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.thumb-text-footer {
+    text-align: center;
+    font-size: 1rem;
+    color: white;
+}
+
+@media only screen and (max-width: 600px) {
+    .thumb-index-footer-container {
+        background-color: rgba(38, 38, 38, 1);
+        height: fit-content;
+        padding: 5% 0 10% 0;
+        text-align: center;
+    }
+    
+    .thumb-index-footer-title {
+        margin: 0% 10%;
+        font-size: min(max(1rem, 20px), 15px);
+        font-family: "HKGrotesk";
+        color: white;
+    }
+
+    .thumb-index-footer {
+        position: relative;
+        display: flex;
+        flex-flow: column;
+        justify-content: center;
+        align-content: center;
+        justify-items: center;
+        align-items: center;
+        width: 99%;
+        margin: 10% 0;
+        gap: 25px;
+    }
+
+    .thumb-item-footer {
+        width: 32%;
+        aspect-ratio: 3/2;
+        border: 1px solid black;
+    }
+
+    .thumb-text-footer {
+        color: white;
+        font-size: 15px;
+        background-color: rgba(38, 38, 38, 1);
+    }
+
+  }
+
+/* ——————— footer ——————— */
 
 footer {
     width: 100%;
@@ -718,5 +798,4 @@ input, textarea {
     border: 5px solid black;
     border-radius: 5px;
 }
-
 
